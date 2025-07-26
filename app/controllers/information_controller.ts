@@ -20,6 +20,7 @@ export default class InformationController {
         slug: category.slug,
         items: category.sub_category?.map((sub: any) => ({
           label: sub.title,
+          arLabel: sub.arName,
           slug: sub.slug,
           items: sub.items.length ? sub.items?.map((item: any) => item) : null,
         })),
